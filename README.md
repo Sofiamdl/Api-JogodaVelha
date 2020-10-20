@@ -2,7 +2,7 @@
 ## Descrição do Projeto
 Projeto de API de um jogo da velha que será implementado em Node+Express. Proposto para a disciplina IF977 - Engenharia de Software - Prof Vinícius Garcia.
 
-### O Projeto
+## O Projeto
 
 
 #### - Método para o usuário criar uma nova sessão: 
