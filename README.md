@@ -5,10 +5,11 @@ Projeto de API de um jogo da velha que será implementado em Node+Express. Propo
 ### O Projeto
 
 
-###### Método para o usuário criar uma nova sessão: 
+#### - Método para o usuário criar uma nova sessão: 
 - POST /session
 
 Exemplo:
+
 Pedido:
 ```
 { 
@@ -30,10 +31,11 @@ body: {
 ```
 
 
-###### Método para o usuário entrar em uma sessão com ID aleátoria, escolhida pelo sistema
+#### Método para o usuário entrar em uma sessão com ID aleátoria, escolhida pelo sistema
 - PATCH /session/id
 
 Exemplo:
+
 Pedido:
 ```
 { 
@@ -55,10 +57,11 @@ body: {
 ```
 
 
-##### Método para o usuário entrar em uma sessão com ID já existente, que o usuário colocará como input
+#### Método para o usuário entrar em uma sessão com ID já existente, que o usuário colocará como input
 - PATCH /session/boardID
 
 Exemplo:
+
 Pedido:
 ```
 { 
@@ -80,10 +83,11 @@ body: {
 ```
 
 
-##### Método para o usuário mudar o "board" da sessão
+#### Método para o usuário mudar o "board" da sessão
 - PATCH /session/boardID
 
 Exemplo:
+
 Pedido:
 ```
 { 
@@ -109,7 +113,7 @@ body: {
 ```
 
 
-##### Método para deletar sessão quando jogo terminar
+#### Método para deletar sessão quando jogo terminar
 - DELETE/session/id
 
 
