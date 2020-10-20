@@ -10,13 +10,13 @@ Projeto de API de um jogo da velha que será implementado em Node+Express. Propo
 
 Exemplo:
 
-Pedido:
+###### Pedido:
 ```
 { 
 player1ID: "123"
 }
 ```
-Resposta:
+###### Resposta:
 ```
 body: {
   id: 223,
@@ -31,18 +31,18 @@ body: {
 ```
 
 
-#### Método para o usuário entrar em uma sessão com ID aleátoria, escolhida pelo sistema
+#### - Método para o usuário entrar em uma sessão com ID aleátoria, escolhida pelo sistema
 - PATCH /session/id
 
 Exemplo:
 
-Pedido:
+###### Pedido:
 ```
 { 
 player2ID: 4
 }
 ```
-Resposta: 
+###### Resposta: 
 ```
 body: {
   id: 224,
@@ -57,18 +57,18 @@ body: {
 ```
 
 
-#### Método para o usuário entrar em uma sessão com ID já existente, que o usuário colocará como input
+#### - Método para o usuário entrar em uma sessão com ID já existente, que o usuário colocará como input
 - PATCH /session/boardID
 
 Exemplo:
 
-Pedido:
+###### Pedido:
 ```
 { 
 player2ID: 2
 }
 ```
-Resposta: 
+###### Resposta: 
 ```
 body: {
   id: 223,
@@ -83,12 +83,12 @@ body: {
 ```
 
 
-#### Método para o usuário mudar o "board" da sessão
+#### -  Método para o usuário mudar o "board" da sessão
 - PATCH /session/boardID
 
 Exemplo:
 
-Pedido:
+###### Pedido:
 ```
 { 
 board: [
@@ -98,7 +98,7 @@ board: [
   ]
 }
 ```
-Resposta: 
+###### Resposta: 
 ```
 body: {
   id: 224,
