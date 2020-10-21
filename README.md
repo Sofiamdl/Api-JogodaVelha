@@ -12,16 +12,26 @@ Exemplo:
 
 ###### Pedido:
 ```
-{ 
-player1ID: "123"
+body223: {
+  id: 223,
+  player1ID: 123,
+  player2ID: null,
+  winner: null,
+  board: [
+  [null,null,null],
+  [null, null, null],
+  [null, null, null]
+  ]
 }
 ```
 ###### Resposta:
 ```
-body: {
+Created
+body223: {
   id: 223,
   player1ID: 123,
   player2ID: null,
+  winner: null,
   board: [
   [null,null,null],
   [null, null, null],
@@ -32,7 +42,7 @@ body: {
 
 
 ### - Método para o usuário entrar em uma sessão com ID aleátoria, escolhida pelo sistema
-- PATCH /session/id
+- PATCH /session/player2ID
 
 Exemplo:
 
@@ -44,10 +54,11 @@ player2ID: 4
 ```
 ###### Resposta: 
 ```
-body: {
+body224: {
   id: 224,
   player1ID: 3,
   player2ID: 4,
+  winner: null,
   board: [
   [null,null,null],
   [null, null, null],
@@ -58,7 +69,7 @@ body: {
 
 
 ### - Método para o usuário entrar em uma sessão com ID já existente, que o usuário colocará como input
-- PATCH /session/boardID
+- PATCH /session/player2ID
 
 Exemplo:
 
@@ -70,10 +81,11 @@ player2ID: 2
 ```
 ###### Resposta: 
 ```
-body: {
+body223: {
   id: 223,
   player1ID: 1,
   player2ID: 2,
+  winner: null,
   board: [
   [null,null,null],
   [null, null, null],
@@ -84,7 +96,7 @@ body: {
 
 
 ### -  Método para o usuário mudar o "board" da sessão
-- PATCH /session/boardID
+- PATCH /session/board
 
 Exemplo:
 
@@ -100,10 +112,11 @@ board: [
 ```
 ###### Resposta: 
 ```
-body: {
+body224: {
   id: 224,
   player1ID: 3,
   player2ID: 4,
+  winner: null,
   board: [
   [null,null,null],
   [null, 1, null],
@@ -111,10 +124,22 @@ body: {
   ]
 }
 ```
+### -  Método para ver se a sessão já está cheia
+- GET/session/player2ID
 
 
-### Método para deletar sessão quando jogo terminar
+### - Método para deletar sessão quando jogo terminar (winner for diferente de null)
 - DELETE/session/id
 
 
+## Wireframe simplificado
 
+
+
+
+
+## Integrantes
+- Alex Paulo Ferreira Damascena(apfd)
+- Felipe De Carvalho Vasconcelos(fcv)
+- Pedro da Matta Ribeiro Moura(pmrm)
+- Sofia Melo Lucena(sml)
