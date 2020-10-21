@@ -132,6 +132,8 @@ body224: {
 - DELETE/session/id
 
 
+
+
 ## Wireframe simplificado
 
 ![](Wireframe.jpg)
